@@ -13,6 +13,9 @@ int small = startX - 5;
 int lineChanger;
 void draw()
 {
+  fill (200);
+  noStroke();
+  rect (0, 0, 300, 10);
   stroke (255);
   lineChanger = (int) (Math.random() * 301 + 1);
   startX = (int) (Math.random() * 301 + 1);
