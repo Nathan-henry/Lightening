@@ -16,7 +16,7 @@ void draw()
   fill (200);
   noStroke();
   rect (0, 0, 300, 10);
-  stroke (255);
+  stroke (200,200,255);
   lineChanger = (int) (Math.random() * 301 + 1);
   startX = (int) (Math.random() * 301 + 1);
   large = startX + 5;
