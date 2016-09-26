@@ -23,7 +23,17 @@ void draw()
     endY = (int) Math.random() * (51) + 10 + endY;
     endX = (int) (Math.random() * (large - small + 1)) +1;
     endX += lineChanger;
+    if (startY <10)
+    {
+      startY -= 10;
+      endY -= 10;
+    }
     line (startX, startY, endX, endY);
+    if (startY <0)
+    {
+      startY += 10;
+      endY += 10;
+    }
     startY = endY;
     startX = endX;
   }
